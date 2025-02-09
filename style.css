@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  padding-top: 217px;
+  padding-left: 120px;
+  height: 1024px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(img/backgroundimg.png);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.top_title {
+  max-width: 700px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.top_text {
+  max-width: 500px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.text-bold {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.button_box {
+  padding-top: 12px;
+}
+
+.button_main {
+  width: 234px;
+  height: 48px;
+  left: 120px;
+  right: 1085.94px;
+  top: 482.11px;
+  bottom: 1049.29px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  border: none;
+}
+.button_main:hover {
+  cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+  background: rgb(235, 68, 63);
+}
+
+.game-box {
+  background-image: url(img/backgroundimg2.png);
+  height: 556px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.game {
+  border-radius: 16px;
+  width: 379px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.game:hover {
+  cursor: url(img/clarity_cursor-hand-line.svg), pointer;
+  border: 3px solid #44D2FF;
+}
+.game_text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+.game_1 {
+  background-image: url(img/game1.png);
+}
+.game_2 {
+  background-image: url(img/game2.png);
+}
+.game_3 {
+  background-image: url(img/game3.png);
+}
+
+.soty_game_box {
+  display: flex;
+  align-items: center;
+  gap: 135px;
+  justify-content: center;
+  padding-top: 234px;
+  padding-bottom: 234px;
+}
+.soty_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.soty_title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.soty_game_box {
+  background: rgb(0, 9, 21);
+}
+.soty_pic {
+  width: 485px;
+  height: 333px;
+  background-image: url(img/soty_picture.png);
+}
+
+.memorygame_pic {
+  width: 485px;
+  height: 333px;
+  background-image: url(img/memorygame.png);
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    padding-top: 239px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 32px;
+  }
+  .top_title {
+    width: 343px;
+    height: 77px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .top_text {
+    width: 343px;
+    height: 66px;
+    color: grey;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .text-bold {
+    color: rgb(255, 255, 255);
+    width: 343px;
+    height: 66px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .button_box {
+    display: flex;
+    justify-content: center;
+  }
+  .footer {
+    height: 1220px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 32px;
+  }
+  .game {
+    width: 343px;
+    height: 300px;
+  }
+  .game-box {
+    height: 1220px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .soty_game_box {
+    height: 654px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+    padding-top: 136px;
+    padding-bottom: 0;
+  }
+  .soty_text_box {
+    padding-top: 51px;
+  }
+  .soty_pic {
+    width: 344px;
+    height: 236px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .soty_title {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .memorygame_pic {
+    width: 344px;
+    height: 236px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}/*# sourceMappingURL=style.css.map */

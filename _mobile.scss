@@ -1,0 +1,125 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        padding-top: 239px;
+        height: 496px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .top_title {
+        width: 343px;
+        height: 77px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .top_text {
+
+        width: 343px;
+        height: 66px;
+        color: grey;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .text-bold {
+        color: rgb(255, 255, 255);
+        width: 343px;
+        height: 66px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .button_box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button_main {}
+
+    .footer {
+        height: 1220px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 32px;
+    }
+
+    .game {
+        width: 343px;
+        height: 300px;
+
+        &-box {
+            height: 1220px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+    }
+
+    .soty {
+        &_game_box {
+            height: 654px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 64px;
+            padding-top: 136px;
+            padding-bottom: 0;
+        }
+
+        &_text_box {
+            padding-top: 51px;
+        }
+
+        &_pic {
+            width: 344px;
+            height: 236px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &_title {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+
+    .memorygame_pic {
+        width: 344px;
+        height: 236px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
