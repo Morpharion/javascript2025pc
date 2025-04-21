@@ -15,6 +15,10 @@ body {
 
 .games {
     background-color: #202027;
+    width: 1440px;
+    height: 1470px;
+    top: 800px;
+
 }
 
 .about {
@@ -50,26 +54,23 @@ body {
     }
 }
 
+.game-box {
 
-
-
-
-.game-box-big {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 16px;
-
-         &__number {
+    &__number {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         background: #F7F7F7;
-        width: 108px;
-        height: 36px;
+        width: 107px;
         padding-top: 8px;
-        padding-right: 16px;
         padding-bottom: 10px;
-        padding-left: 16px;
         border-radius: 52.58px;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0px;
     }
 
     &__name {
@@ -80,7 +81,25 @@ body {
         letter-spacing: 0px;
         vertical-align: middle;
     }
+
 }
+
+.game-box-big {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.game-box-mid {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
 
 .game-box-small {
 padding-top: 32px;
@@ -92,77 +111,6 @@ display: flex;
 flex-direction: column;
 gap: 16px;
 }
-
-.game-box {
-
-    &__number {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        background: #F7F7F7;
-        width: 108px;
-        padding-top: 8px;
-        padding-right: 16px;
-        padding-bottom: 10px;
-        padding-left: 16px;
-        border-radius: 52.58px;
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 110.00000000000001%;
-        letter-spacing: 0px;
-
-    }
-
-    &__name {
-        font-family: Montserrat;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 100%;
-        letter-spacing: 0px;
-        vertical-align: middle;
-    }
-
-}
-
-// .games {
-//     position: relative;
-//     background-color: #202027;
-//     width: 1440px;
-//     z-index: 1; 
-// }
-
-// .star1, .star11, .star12 {
-//     position: absolute;
-//     z-index: -1;
-// }
-
-// .star1 {
-//     width: 584.7165528971053;
-// height: 584.7165528971053;
-// top: 77px;
-// left: 64.5%;
-// border-width: 1px;
-//     z-index: -1;
-// }
-
-// .star11 {
-//     width: 31.339238597680133;
-//     height: 31.339238597680133;
-//     top: 770px;
-//     left: 27.97px;
-//     border-width: 1px;
-//     z-index: -1;
-// }
-
-// .star12 {
-//     width: 54.59828476423661;
-//     height: 54.59828476423661;
-//     top: 822px;
-//     left: 45.18px;
-//     border-width: 1px; 
-//     z-index: -1;
-// }
 
 .games-grid {
         width: 1201px;
@@ -186,14 +134,33 @@ gap: 16px;
     width: 378px;
     height: 473px;
     border-radius: 30px;
+    transition: transform 0.3s ease, z-index 0s 0.3s;
+}
+
+.mid-game-card {
+    background-color: white;
+    width: 378px;
+    height: 512px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, z-index 0s 0.3s;
 }
 
 .big-game-card {
     background-color: white;
     width: 378px;
+    height: 551px;
     border-radius: 30px;
-
+    transition: transform 0.3s ease, z-index 0s 0.3s;
 }
+
+.small-game-card:hover,
+.mid-game-card:hover,
+.big-game-card:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 10;
+}
+
 
 .small-game-card-pic1 {
     background-image: url(imgs/small-game-card-pic1.png);
@@ -215,8 +182,8 @@ gap: 16px;
     background-position: center;
 }
 
-.small-game-card-pic5 {
-    background-image: url(imgs/small-game-card-pic5.png);
+.mid-game-card-pic5 {
+    background-image: url(imgs/mid-game-card-pic5.png);
     width: 378px;
     height: 314px;
     border-radius: 30px;
@@ -225,8 +192,8 @@ gap: 16px;
     background-position: center;
 }
 
-.big-game-card-pic2 {
-    background-image: url(imgs/big-game-card-pic2.png);
+.mid-game-card-pic2 {
+    background-image: url(imgs/mid-game-card-pic2.png);
     width: 378px;
     height: 314px;
     border-radius: 30px;
